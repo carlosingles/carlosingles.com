@@ -1,0 +1,27 @@
+#!/bin/bash
+
+# variables
+APP_NAME="carlosingles.com"
+APP_HOST="carlos@carlosingles.com"
+APP_PATH="/var/www/html"
+fn="$APP_NAME.zip"
+# create temp directory for final archive
+rm -rf tmp
+mkdir tmp
+find ./ -path '*/tmp/*' -prune -o -path '*/bin/*' -prune -o -path '*/\.git*' -prune -o -type f -print | zip $fn -@
+# Copy the app to digital ocean ftp
+sftp $APP_HOST << EOF
+put $fn $APP_PATH
+bye
+EOF
+ssh -t $APP_HOST << EOF
+cd $APP_PATH
+unzip -o $fn
+rm $fn
+logout
+EOF
+echo "Done! Deployed version"
+echo "Cleaning up archive ..."
+rm -rf tmp
+rm $fn
+echo 'Archive cleaned!'
