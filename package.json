@@ -1,0 +1,24 @@
+{
+  "name": "carlosingles.com",
+  "version": "1.0.0",
+  "description": "Personal website",
+  "main": "index.js",
+  "scripts": {
+    "serve": "vuepress dev src",
+    "build": "vuepress build src",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carlosingles/carlosingles.com.git"
+  },
+  "author": "Carlos Ingles",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/carlosingles/carlosingles.com/issues"
+  },
+  "homepage": "https://github.com/carlosingles/carlosingles.com#readme",
+  "devDependencies": {
+    "vitepress": "^0.3.1"
+  }
+}
