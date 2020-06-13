@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body
+  @apply h-full bg-gray-200 text-gray-700;
+
+#app 
+  @apply h-full flex;
+
+h1
+  @apply text-5xl;
+
+a
+  @apply border-b-2 border-dotted border-gray-500;
+  &:hover
+    @apply border-0;
+    color: #f38423;
+
+.fa-li
+  left: -3em;
+  width: 3em;
