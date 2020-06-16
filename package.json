@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "serve": "vuepress dev src",
-    "build": "vuepress build src",
+    "build": "NODE_ENV=production vuepress build src",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
