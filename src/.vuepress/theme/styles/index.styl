@@ -1,22 +1,30 @@
-@tailwind base;
-@tailwind components;
+/* purgecss start ignore */
+@tailwind  base;
+@tailwind  components;
+/* purgecss end ignore */
 @tailwind utilities;
 
-html, body
+html, body {
   @apply h-full bg-gray-200 text-gray-700;
+}
 
-#app 
+#app {
   @apply h-full flex;
+}
 
-h1
+h1 {
   @apply text-5xl;
+}
 
-a
+a {
   @apply border-b-2 border-dotted border-gray-500;
-  &:hover
+  &:hover {
     @apply border-0;
     color: #f38423;
+  }
+}
 
-.fa-li
+.fa-li {
   left: -3em;
   width: 3em;
+}

@@ -9,5 +9,9 @@ module.exports = {
         '1/2': '50%'
       }
     }
-  }
+  },
+  purge: [
+    './src/**/*.html',
+    './src/**/*.vue'
+  ]
 }

@@ -12,7 +12,14 @@ module.exports = {
     logo: 'assets/logo.svg'
   },
   plugins: {
-    '@silvanite/tailwind': {},
     'seo': {}
+  },
+  postcss: {
+    plugins: [
+      require('postcss-import'),
+      require('tailwindcss'),
+      require('postcss-nested'),
+      require('autoprefixer')
+    ]
   }
 }
