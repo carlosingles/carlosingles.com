@@ -9,7 +9,7 @@
           i.fab.fa-github.block
         a(href='https://twitter.com/carlosingles_' title='Twitter')
           i.fab.fa-twitter.block
-    p.last-updated last updated(13 june 2020)
+    p.last-updated last updated(28 June 2020)
 </template>
 
 <style lang="postcss">
@@ -32,14 +32,17 @@ footer {
   @screen md {
     @apply flex-col;
     @apply mt-auto mb-0;
-    @apply border-b-2;
-    border-color: #f38423;
+    @apply border-solid border-2 border-gray-300;
+    border-left-color: theme('colors.gray.400');
+    border-right-color: theme('colors.gray.400');
+    border-bottom-color: #f38423;
   }
   a {
     @apply mx-3 p-3 bg-gray-300 text-center;
     @apply border-b-2 border-solid;
     border-color: #f38423;
     @screen md {
+      @apply mx-0;
       @apply border-b-0;
     }
     &:hover {
