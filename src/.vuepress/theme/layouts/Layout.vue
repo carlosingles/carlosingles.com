@@ -45,6 +45,9 @@ footer {
     border-color: #f38423;
     width: 48px;
     height: 48px;
+    svg {
+      display: block !important;
+    }
     @screen md {
       @apply mx-0;
       @apply border-b-0;
