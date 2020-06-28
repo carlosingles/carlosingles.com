@@ -1,6 +1,6 @@
 ---toml
 title = "Hello"
-description = "A short description of who I am and what I do"
+description = "I'm Carlos Ingles and I'm a full stack developer based in Melbourne."
 lang = "en-AU"
 ---
 <Hello-Content />
