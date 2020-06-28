@@ -3,12 +3,12 @@
     div.card-container
       Content(title='Welcome :)')
       footer
-        a(href='mailto:hello@carlosingles.com' title='Email')
-          i(style='font-size: 32px;').fas.fa-mailbox.block
-        a(href='https://github.com/carlosingles' title='GitHub')
-          i.fab.fa-github.block
-        a(href='https://twitter.com/carlosingles_' title='Twitter')
-          i.fab.fa-twitter.block
+        a(href='mailto:hello@carlosingles.com' title='Email' target="_blank")
+          i(style='font-size: 24px;').fas.fa-mailbox.block
+        a(href='https://github.com/carlosingles' title='GitHub' target="_blank")
+          i(style='font-size: 24px;').fab.fa-github.block
+        a(href='https://twitter.com/carlosingles_' title='Twitter' target="_blank")
+          i(style='font-size: 24px;').fab.fa-twitter.block
     p.last-updated last updated(28 June 2020)
 </template>
 
@@ -43,6 +43,8 @@ footer {
     @apply mx-3 p-3 bg-gray-300 text-center;
     @apply border-b-2 border-solid;
     border-color: #f38423;
+    width: 48px;
+    height: 48px;
     @screen md {
       @apply mx-0;
       @apply border-b-0;

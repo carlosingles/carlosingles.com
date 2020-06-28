@@ -41,7 +41,7 @@
     @apply ml-0 mr-16 pr-24;
   }
   img.logo {
-    height: 42px;
+    height: 48px;
     @apply absolute;
     @apply transform translate-x-1/2;
     @apply bottom-0 right-1/2;
