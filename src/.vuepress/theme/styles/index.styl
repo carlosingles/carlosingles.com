@@ -5,11 +5,11 @@
 @tailwind utilities;
 
 html, body {
-  @apply h-full bg-gray-200 text-gray-700;
+  @apply min-h-screen bg-gray-200 text-gray-700;
 }
 
 #app {
-  @apply h-full flex;
+  @apply min-h-screen flex;
 }
 
 h1 {
@@ -23,12 +23,31 @@ a {
     color: #f38423;
   }
 }
-
 .fa-ul {
-  @apply ml-16;
+  @apply ml-4;
+  li {
+    @apply flex flex-col;
+  }
 }
 .fa-li {
-  left: calc(-32px - 1.5em);
-  width: 1.5em;
+  @apply relative;
+  @apply text-center;
+  @apply w-full;
+  @apply left-0;
+  @apply mt-4;
   top: 1px;
+}
+@screen md {
+  .fa-ul {
+    @apply ml-16;
+    li {
+      @apply inline-block;
+    }
+  }
+  .fa-li {
+    @apply mt-0;
+    @apply absolute;
+    left: calc(-32px - 1.5em);
+    width: 1.5em;
+  }
 }

@@ -16,8 +16,9 @@
 .app {
   @apply flex flex-col flex-grow;
   .card-container {
-    @apply pt-32 mx-auto flex flex-col;
+    @apply p-3 mx-auto flex flex-col;
     @screen md {
+      @apply p-0 pt-32;
       @apply flex-row;
     }
   }
@@ -29,6 +30,7 @@ footer {
   @apply flex flex-row justify-center;
   @apply my-6;
   @apply text-4xl text-gray-700 text-center;
+  min-height: 1.75em;
   @screen md {
     @apply flex-col;
     @apply mt-auto mb-0;
